@@ -8,7 +8,7 @@ export default function AttPage () {
         <>
             <div className="top">
                 <div className="shadow"></div>
-                <video src={att.video} autoPlay loop muted />
+                <iframe width="100%" height="100%" src={att.video + "?autoplay=1&controls=0&loop=1&mute=1"} title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen className="video"></iframe>
                 <h1>{att.name}</h1>
             </div>
             <div>
